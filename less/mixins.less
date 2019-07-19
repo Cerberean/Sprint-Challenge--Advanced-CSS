@@ -1,1 +1,32 @@
 // Mixins Here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.borderbox(){
+    border: 3px solid black;
+}
+
+// .btncolor(@bg-color: #23293B, @font: #FFF){
+//     background-color: @bg-color;
+//     color: @font;
+// }
+
+@phone: ~'(max-width: 500px)';
+
+.customBtn(@bg-color:#23293B, @font:#FFF){
+    background-color: @bg-color;
+    color:@font;
+    padding: 4% 8%;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    
+     &:hover{
+      background-color:@font;
+      color:@bg-color; 
+    }
+}
