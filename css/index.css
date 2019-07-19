@@ -163,11 +163,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.navHead {
+body {
   border: 2px solid black;
+}
+.navHead {
+  padding: 1%;
+  background-color: #f3f3f3;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navHead div h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1%;
+}
+.navHead div nav {
+  padding: 1%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.navHead div nav a {
+  text-decoration: none;
+  color: black;
 }
 footer {
   color: #22283B;
@@ -220,6 +240,10 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border: 2px solid black;
+  font-size: 2rem;
 }
 .home .walk .walk-img {
   width: 46%;
